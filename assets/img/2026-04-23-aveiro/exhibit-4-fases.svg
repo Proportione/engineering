@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 22px; fill: #1a1a1a; font-weight: 600; letter-spacing: -0.3px; }
+    .subtitle { font-size: 14px; fill: #555; font-weight: 400; }
+    .meta { font-size: 11px; fill: #888; letter-spacing: 2px; text-transform: uppercase; }
+    .phase-num { font-size: 36px; font-weight: 700; letter-spacing: -1px; }
+    .phase-tag { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
+    .phase-title { font-size: 16px; fill: #1a1a1a; font-weight: 700; }
+    .phase-text { font-size: 12px; fill: #333; font-weight: 400; }
+    .phase-out { font-size: 11px; fill: #555; font-weight: 600; }
+    .phase-1-color { fill: #5F322F; }
+    .phase-2-color { fill: #3B431C; }
+    .phase-3-color { fill: #6E8157; }
+    .phase-4-color { fill: #AEADB3; }
+    .timeline { stroke: #AEADB3; stroke-width: 2; fill: none; }
+    .box { fill: #FAFAF7; stroke: #AEADB3; stroke-width: 1; }
+    .box-active { fill: #FAF6F5; stroke: #5F322F; stroke-width: 1.5; }
+  </style>
+
+  <!-- Header -->
+  <text x="60" y="55" class="meta">Exhibit 4 · Plan de fases</text>
+  <text x="60" y="90" class="title">Cuatro fases. Cada una entrega valor sin depender de la siguiente.</text>
+  <text x="60" y="115" class="subtitle">El servidor no nace adulto. Crece según la carga real, no según un PowerPoint.</text>
+
+  <!-- Phase 1 -->
+  <g transform="translate(60, 170)">
+    <rect width="260" height="320" class="box-active"/>
+    <text x="20" y="55" class="phase-num phase-1-color">01</text>
+    <text x="20" y="80" class="phase-tag phase-1-color">Fase actual</text>
+    <text x="20" y="115" class="phase-title">Cimientos + IA básica</text>
+    <line x1="20" y1="130" x2="100" y2="130" stroke="#5F322F" stroke-width="2"/>
+    <text x="20" y="160" class="phase-text">Hipervisor Proxmox + ZFS mirror.</text>
+    <text x="20" y="180" class="phase-text">2 NIC 10 GbE bond.</text>
+    <text x="20" y="200" class="phase-text">Tailscale hub secundario.</text>
+    <text x="20" y="220" class="phase-text">LLM 14 B Q4 funcional desde día 1.</text>
+    <text x="20" y="240" class="phase-text">Réplica con nodo Madrid.</text>
+    <text x="20" y="285" class="phase-out">Output</text>
+    <text x="20" y="303" class="phase-text">Ahorro ~50 €/mes en API externa.</text>
+  </g>
+
+  <!-- Phase 2 -->
+  <g transform="translate(340, 170)">
+    <rect width="260" height="320" class="box"/>
+    <text x="20" y="55" class="phase-num phase-2-color">02</text>
+    <text x="20" y="80" class="phase-tag phase-2-color">A 6-12 meses</text>
+    <text x="20" y="115" class="phase-title">IA potente</text>
+    <line x1="20" y1="130" x2="100" y2="130" stroke="#3B431C" stroke-width="2"/>
+    <text x="20" y="160" class="phase-text">GPU gama alta (32 GB VRAM).</text>
+    <text x="20" y="180" class="phase-text">+64 GB ECC (a 128 GB total).</text>
+    <text x="20" y="200" class="phase-text">GPU original pasa a secundaria</text>
+    <text x="20" y="220" class="phase-text">para embeddings, voz, imagen.</text>
+    <text x="20" y="285" class="phase-out">Output</text>
+    <text x="20" y="303" class="phase-text">LLM 32 B y 70 B en producción.</text>
+  </g>
+
+  <!-- Phase 3 -->
+  <g transform="translate(620, 170)">
+    <rect width="260" height="320" class="box"/>
+    <text x="20" y="55" class="phase-num phase-3-color">03</text>
+    <text x="20" y="80" class="phase-tag phase-3-color">A 12-18 meses</text>
+    <text x="20" y="115" class="phase-title">Redundancia</text>
+    <line x1="20" y1="130" x2="100" y2="130" stroke="#6E8157" stroke-width="2"/>
+    <text x="20" y="160" class="phase-text">Segundo nodo recuperado</text>
+    <text x="20" y="180" class="phase-text">+ 2× HDD 4 TB.</text>
+    <text x="20" y="200" class="phase-text">SAI tier-2.</text>
+    <text x="20" y="220" class="phase-text">Réplica ZFS bidireccional.</text>
+    <text x="20" y="285" class="phase-out">Output</text>
+    <text x="20" y="303" class="phase-text">RTO &lt; 4 h ante caída del nodo.</text>
+  </g>
+
+  <!-- Phase 4 -->
+  <g transform="translate(900, 170)">
+    <rect width="240" height="320" class="box"/>
+    <text x="20" y="55" class="phase-num phase-4-color">04</text>
+    <text x="20" y="80" class="phase-tag phase-4-color">Opcional</text>
+    <text x="20" y="115" class="phase-title">Expansión disco</text>
+    <line x1="20" y1="130" x2="100" y2="130" stroke="#AEADB3" stroke-width="2"/>
+    <text x="20" y="160" class="phase-text">RAIDZ1 con 4 discos.</text>
+    <text x="20" y="180" class="phase-text">12 TB útiles.</text>
+    <text x="20" y="200" class="phase-text">Sin paradas.</text>
+    <text x="20" y="285" class="phase-out">Output</text>
+    <text x="20" y="303" class="phase-text">Capacidad para datasets de cliente.</text>
+  </g>
+
+  <!-- Timeline at bottom -->
+  <line x1="60" y1="510" x2="1140" y2="510" class="timeline"/>
+  <circle cx="190" cy="510" r="5" fill="#5F322F"/>
+  <circle cx="470" cy="510" r="5" fill="#AEADB3"/>
+  <circle cx="750" cy="510" r="5" fill="#AEADB3"/>
+  <circle cx="1020" cy="510" r="5" fill="#AEADB3"/>
+  <text x="190" y="535" class="meta" text-anchor="middle">Mes 1</text>
+  <text x="470" y="535" class="meta" text-anchor="middle">Mes 6-12</text>
+  <text x="750" y="535" class="meta" text-anchor="middle">Mes 12-18</text>
+  <text x="1020" y="535" class="meta" text-anchor="middle">Cuando haga falta</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 22px; fill: #1a1a1a; font-weight: 600; letter-spacing: -0.3px; }
+    .subtitle { font-size: 14px; fill: #555; font-weight: 400; }
+    .meta { font-size: 11px; fill: #888; letter-spacing: 2px; text-transform: uppercase; }
+    .col-header { font-size: 12px; font-weight: 700; fill: #FFFFFF; letter-spacing: 1px; text-transform: uppercase; }
+    .component { font-size: 14px; fill: #1a1a1a; font-weight: 600; }
+    .spec { font-size: 12px; fill: #333; font-weight: 400; }
+    .reason { font-size: 12px; fill: #555; font-weight: 400; font-style: italic; }
+    .row-bg { fill: #FAFAF7; }
+    .row-bg-alt { fill: #FFFFFF; }
+    .header-bar { fill: #5F322F; }
+    .upgrade-tag { font-size: 10px; fill: #6E8157; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  </style>
+
+  <!-- Header -->
+  <text x="60" y="55" class="meta">Exhibit 2 · BOM Fase 1</text>
+  <text x="60" y="90" class="title">Componentes y por qué cada uno</text>
+  <text x="60" y="115" class="subtitle">Tres principios: nada se desperdicia al escalar, server-grade donde el sobrecoste es pequeño, comprable desde Aveiro.</text>
+
+  <!-- Column headers -->
+  <rect x="60" y="150" width="1080" height="40" class="header-bar"/>
+  <text x="80" y="175" class="col-header">Componente</text>
+  <text x="350" y="175" class="col-header">Qué pusimos</text>
+  <text x="700" y="175" class="col-header">Por qué</text>
+
+  <!-- Row 1: Placa -->
+  <rect x="60" y="190" width="1080" height="55" class="row-bg"/>
+  <text x="80" y="218" class="component">Placa base</text>
+  <text x="80" y="236" class="reason">server-grade</text>
+  <text x="350" y="218" class="spec">µATX con BMC AST2600 (IPMI fuera de banda)</text>
+  <text x="350" y="236" class="spec">2× 10 GbE integrado, 1× M.2 NVMe nativo</text>
+  <text x="700" y="218" class="reason">IPMI = administrar el servidor sin tocarlo,</text>
+  <text x="700" y="236" class="reason">incluso si el SO está caído.</text>
+
+  <!-- Row 2: CPU -->
+  <rect x="60" y="245" width="1080" height="55" class="row-bg-alt"/>
+  <text x="80" y="273" class="component">CPU</text>
+  <text x="80" y="291" class="reason">12 c / 24 t · 65 W</text>
+  <text x="350" y="273" class="spec">EPYC 4xxx-series Zen 4 (socket AM5)</text>
+  <text x="350" y="291" class="spec">AVX-512, 65 W TDP, ECC nativo</text>
+  <text x="700" y="273" class="reason">AM5 da camino de upgrade hasta 2027+.</text>
+  <text x="700" y="291" class="reason">AVX-512 acelera inferencia LLM en CPU.</text>
+
+  <!-- Row 3: RAM -->
+  <rect x="60" y="300" width="1080" height="55" class="row-bg"/>
+  <text x="80" y="328" class="component">RAM</text>
+  <text x="80" y="346" class="reason">32 GB ECC inicial · 192 GB techo</text>
+  <text x="350" y="328" class="spec">2× 16 GB DDR5 ECC UDIMM</text>
+  <text x="350" y="346" class="spec">Cuatro slots libres para Fase 2</text>
+  <text x="700" y="328" class="reason">ECC en server-grade es regla, no opción.</text>
+  <text x="700" y="346" class="reason">Crece sumando módulos, no sustituyéndolos.</text>
+
+  <!-- Row 4: Storage -->
+  <rect x="60" y="355" width="1080" height="55" class="row-bg-alt"/>
+  <text x="80" y="383" class="component">Almacenamiento</text>
+  <text x="80" y="401" class="reason">SSD enterprise + 2× HDD enterprise</text>
+  <text x="350" y="383" class="spec">SATA SSD enterprise (SO + boot)</text>
+  <text x="350" y="401" class="spec">2× HDD 4 TB en ZFS mirror (datos)</text>
+  <text x="700" y="383" class="reason">SSD enterprise tiene PLP (no pierde datos</text>
+  <text x="700" y="401" class="reason">en corte de luz). HDD enterprise = 2 M h MTBF.</text>
+
+  <!-- Row 5: GPU -->
+  <rect x="60" y="410" width="1080" height="55" class="row-bg"/>
+  <text x="80" y="438" class="component">GPU</text>
+  <text x="80" y="456" class="reason">16 GB VRAM</text>
+  <text x="350" y="438" class="spec">Consumer GPU 16 GB (gen actual)</text>
+  <text x="350" y="456" class="spec">Pasa a secundaria cuando entre la siguiente</text>
+  <text x="700" y="438" class="reason">16 GB es el suelo para LLM 14 B en cuantizado.</text>
+  <text x="700" y="456" class="reason">No tiramos nada al subir de gama.</text>
+
+  <!-- Row 6: PSU -->
+  <rect x="60" y="465" width="1080" height="55" class="row-bg-alt"/>
+  <text x="80" y="493" class="component">Fuente</text>
+  <text x="80" y="511" class="reason">850 W Titanium · 10 años garantía</text>
+  <text x="350" y="493" class="spec">ATX 3.1, conector 12V-2x6 nativo</text>
+  <text x="350" y="511" class="spec">Semi-pasiva, 94 % eficiencia</text>
+  <text x="700" y="493" class="reason">Dimensionada para GPU futura de gama alta</text>
+  <text x="700" y="511" class="reason">sin tener que cambiar fuente.</text>
+
+  <!-- Row 7: Caja -->
+  <rect x="60" y="520" width="1080" height="55" class="row-bg"/>
+  <text x="80" y="548" class="component">Caja</text>
+  <text x="80" y="566" class="reason">silent server tier · 18 bahías 3.5"/2.5"</text>
+  <text x="350" y="548" class="spec">E-ATX silent con paneles fonoabsorbentes</text>
+  <text x="350" y="566" class="spec">Admite GPU 360 mm + ATX 3.1</text>
+  <text x="700" y="548" class="reason">El servidor vive en sede, no en datacenter.</text>
+  <text x="700" y="566" class="reason">Decibelios y futuro upgrade sin reemplazos.</text>
+
+  <!-- Footer -->
+  <text x="60" y="615" class="meta" font-size="10">Fuente: Proportione · BOM Fase 1 servidor Aveiro · Coste agregado en rango medio del segmento workstation</text>
+</svg>

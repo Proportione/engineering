@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 22px; fill: #1a1a1a; font-weight: 600; letter-spacing: -0.3px; }
+    .subtitle { font-size: 14px; fill: #555; font-weight: 400; }
+    .meta { font-size: 11px; fill: #888; letter-spacing: 2px; text-transform: uppercase; }
+    .col-header { font-size: 14px; font-weight: 700; }
+    .col-sub { font-size: 11px; font-weight: 400; opacity: 0.85; }
+    .row-label { font-size: 13px; fill: #1a1a1a; font-weight: 600; }
+    .cell-text { font-size: 12px; fill: #333; font-weight: 400; }
+    .cell-strong { font-size: 12px; fill: #1a1a1a; font-weight: 600; }
+    .col-cloud { fill: #AEADB3; }
+    .col-mac { fill: #6E8157; }
+    .col-nas { fill: #3B431C; }
+    .col-server { fill: #5F322F; }
+    .row-bg { fill: #FAFAF7; }
+    .row-bg-alt { fill: #FFFFFF; }
+    .winner { font-size: 11px; fill: #5F322F; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+  </style>
+
+  <!-- Header -->
+  <text x="60" y="55" class="meta">Exhibit 1 · Marco de decisión</text>
+  <text x="60" y="90" class="title">Cuatro opciones para la capa de cómputo de una consultoría pequeña</text>
+  <text x="60" y="115" class="subtitle">Misma carga (LLM local + servicios internos), mismo horizonte (5 años). Cuál gana en cada dimensión.</text>
+
+  <!-- Column headers -->
+  <rect x="350" y="155" width="210" height="55" class="col-cloud"/>
+  <text x="455" y="178" class="col-header" fill="#1a1a1a" text-anchor="middle">Hyperscaler cloud</text>
+  <text x="455" y="198" class="col-sub" fill="#1a1a1a" text-anchor="middle">AWS · GCP · Azure</text>
+
+  <rect x="560" y="155" width="210" height="55" class="col-mac"/>
+  <text x="665" y="178" class="col-header" fill="#FFFFFF" text-anchor="middle">Mac Mini en estantería</text>
+  <text x="665" y="198" class="col-sub" fill="#FFFFFF" text-anchor="middle">M2 / M2 Pro</text>
+
+  <rect x="770" y="155" width="210" height="55" class="col-nas"/>
+  <text x="875" y="178" class="col-header" fill="#FFFFFF" text-anchor="middle">NAS con módulo</text>
+  <text x="875" y="198" class="col-sub" fill="#FFFFFF" text-anchor="middle">Synology · QNAP</text>
+
+  <rect x="980" y="155" width="160" height="55" class="col-server"/>
+  <text x="1060" y="178" class="col-header" fill="#FFFFFF" text-anchor="middle">Servidor x86 propio</text>
+  <text x="1060" y="198" class="col-sub" fill="#FFFFFF" text-anchor="middle">Aveiro · Proxmox</text>
+
+  <!-- Row 1: Coste 3 años -->
+  <rect x="60" y="210" width="1080" height="60" class="row-bg"/>
+  <text x="80" y="246" class="row-label">Coste a 3 años</text>
+  <text x="455" y="246" class="cell-strong" text-anchor="middle">Muy alto</text>
+  <text x="665" y="246" class="cell-strong" text-anchor="middle">Bajo</text>
+  <text x="875" y="246" class="cell-strong" text-anchor="middle">Medio</text>
+  <text x="1060" y="246" class="cell-strong" text-anchor="middle">Bajo (CapEx una vez)</text>
+
+  <!-- Row 2: Cómputo IA -->
+  <rect x="60" y="270" width="1080" height="60" class="row-bg-alt"/>
+  <text x="80" y="306" class="row-label">Cómputo para LLM local</text>
+  <text x="455" y="306" class="cell-strong" text-anchor="middle">Sí, alquilado por hora</text>
+  <text x="665" y="306" class="cell-text" text-anchor="middle">Limitado por RAM</text>
+  <text x="875" y="306" class="cell-text" text-anchor="middle">Marginal</text>
+  <text x="1060" y="306" class="cell-strong" text-anchor="middle">Sí, GPU dedicada</text>
+
+  <!-- Row 3: Almacenamiento -->
+  <rect x="60" y="330" width="1080" height="60" class="row-bg"/>
+  <text x="80" y="366" class="row-label">Almacenamiento ampliable</text>
+  <text x="455" y="366" class="cell-text" text-anchor="middle">Sí, escala con factura</text>
+  <text x="665" y="366" class="cell-text" text-anchor="middle">No (sellado)</text>
+  <text x="875" y="366" class="cell-strong" text-anchor="middle">Sí, su fuerte</text>
+  <text x="1060" y="366" class="cell-strong" text-anchor="middle">Sí, ZFS multi-disco</text>
+
+  <!-- Row 4: Operación silenciosa -->
+  <rect x="60" y="390" width="1080" height="60" class="row-bg-alt"/>
+  <text x="80" y="426" class="row-label">Operación silenciosa</text>
+  <text x="455" y="426" class="cell-text" text-anchor="middle">N/A (no en sede)</text>
+  <text x="665" y="426" class="cell-strong" text-anchor="middle">Excelente</text>
+  <text x="875" y="426" class="cell-strong" text-anchor="middle">Excelente</text>
+  <text x="1060" y="426" class="cell-text" text-anchor="middle">Buena con caja silent</text>
+
+  <!-- Row 5: Vida útil > 5 años -->
+  <rect x="60" y="450" width="1080" height="60" class="row-bg"/>
+  <text x="80" y="486" class="row-label">Vida útil &gt; 5 años</text>
+  <text x="455" y="486" class="cell-text" text-anchor="middle">Depende del proveedor</text>
+  <text x="665" y="486" class="cell-text" text-anchor="middle">Sí, sin upgrade</text>
+  <text x="875" y="486" class="cell-text" text-anchor="middle">Sí, en almacenamiento</text>
+  <text x="1060" y="486" class="cell-strong" text-anchor="middle">Sí, con upgrades</text>
+
+  <!-- Row 6: Cuándo gana -->
+  <rect x="60" y="510" width="1080" height="80" class="row-bg-alt"/>
+  <text x="80" y="540" class="row-label">Cuándo gana</text>
+  <text x="455" y="540" class="cell-text" text-anchor="middle">Carga a ráfagas,</text>
+  <text x="455" y="558" class="cell-text" text-anchor="middle">picos impredecibles</text>
+  <text x="665" y="540" class="cell-text" text-anchor="middle">Equipo de una persona,</text>
+  <text x="665" y="558" class="cell-text" text-anchor="middle">sin réplica multinodo</text>
+  <text x="875" y="540" class="cell-text" text-anchor="middle">Almacenamiento tier 3,</text>
+  <text x="875" y="558" class="cell-text" text-anchor="middle">backup frío</text>
+  <text x="1060" y="540" class="winner" text-anchor="middle">Carga continua,</text>
+  <text x="1060" y="558" class="winner" text-anchor="middle">horizonte 5 años</text>
+
+  <!-- Footer -->
+  <text x="60" y="610" class="meta" font-size="10">Fuente: Proportione · Marco de decisión nodo Aveiro Q1 2026</text>
+</svg>
