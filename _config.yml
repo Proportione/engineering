@@ -6,9 +6,8 @@ url: https://engineering.proportione.com
 lang: es
 timezone: Europe/Lisbon
 
-author:
-  name: Proportione
-  email: contacto@proportione.com
+author: Proportione
+email: contacto@proportione.com
 
 theme: minima
 minima:
