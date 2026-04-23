@@ -1,0 +1,43 @@
+---
+---
+
+@import "minima";
+
+$proportione-brand: #5F322F;
+
+body {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.post-title {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+a { color: $proportione-brand; }
+a:visited { color: darken($proportione-brand, 8%); }
+a:hover { color: lighten($proportione-brand, 10%); }
+
+.site-title, .site-title:visited {
+  color: $proportione-brand;
+}
+
+blockquote {
+  border-left-color: $proportione-brand;
+  font-style: normal;
+}
+
+img + em,
+p > em:only-child {
+  display: block;
+  text-align: center;
+  font-size: 0.85em;
+  color: #666;
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+  font-style: normal;
+}

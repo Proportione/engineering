@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 22px; fill: #1a1a1a; font-weight: 600; letter-spacing: -0.3px; }
+    .subtitle { font-size: 14px; fill: #555; font-weight: 400; }
+    .meta { font-size: 11px; fill: #888; letter-spacing: 2px; text-transform: uppercase; }
+    .col-header { font-size: 16px; font-weight: 600; }
+    .row-label { font-size: 13px; fill: #1a1a1a; font-weight: 600; }
+    .row-sub { font-size: 11px; fill: #888; font-weight: 400; }
+    .cell-text { font-size: 13px; fill: #333; font-weight: 400; }
+    .cell-text-strong { font-size: 13px; fill: #1a1a1a; font-weight: 600; }
+    .header-bar-firestore { fill: #5F322F; }
+    .header-bar-saas { fill: #AEADB3; }
+    .row-bg { fill: #FAFAF7; }
+    .row-bg-alt { fill: #FFFFFF; }
+    .winner-mark { font-size: 11px; fill: #5F322F; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+  </style>
+
+  <!-- Header -->
+  <text x="60" y="55" class="meta">Exhibit 3 · Decisión 1</text>
+  <text x="60" y="90" class="title">Firestore como CRM frente a SaaS comercial</text>
+  <text x="60" y="115" class="subtitle">Cinco dimensiones, una decisión. Cuándo gana cada uno.</text>
+
+  <!-- Column headers -->
+  <rect x="380" y="155" width="380" height="50" class="header-bar-firestore"/>
+  <text x="570" y="186" class="col-header" fill="#FFFFFF" text-anchor="middle">Firestore (nuestra elección)</text>
+
+  <rect x="760" y="155" width="380" height="50" class="header-bar-saas"/>
+  <text x="950" y="186" class="col-header" fill="#1a1a1a" text-anchor="middle">CRM SaaS (HubSpot, Pipedrive…)</text>
+
+  <!-- Row 1: Coste -->
+  <rect x="60" y="205" width="1080" height="65" class="row-bg"/>
+  <text x="80" y="232" class="row-label">Coste a 3 años</text>
+  <text x="80" y="252" class="row-sub">10k contactos, 5 usuarios</text>
+  <text x="400" y="240" class="cell-text-strong">Decenas de € / mes</text>
+  <text x="400" y="258" class="cell-text">Almacenamiento + lecturas Firestore</text>
+  <text x="780" y="240" class="cell-text-strong">600-2.000 € / mes</text>
+  <text x="780" y="258" class="cell-text">Por usuario, escala con contactos</text>
+
+  <!-- Row 2: Time-to-value -->
+  <rect x="60" y="270" width="1080" height="65" class="row-bg-alt"/>
+  <text x="80" y="297" class="row-label">Time-to-value</text>
+  <text x="80" y="317" class="row-sub">Primer deal trackeado</text>
+  <text x="400" y="305" class="cell-text-strong">2-4 semanas</text>
+  <text x="400" y="323" class="cell-text">Schema + UI mínima a construir</text>
+  <text x="780" y="305" class="cell-text-strong">2-4 días</text>
+  <text x="780" y="323" class="cell-text">Onboarding guiado, plantillas listas</text>
+
+  <!-- Row 3: Integración con stack -->
+  <rect x="60" y="335" width="1080" height="65" class="row-bg"/>
+  <text x="80" y="362" class="row-label">Integración con resto del stack</text>
+  <text x="80" y="382" class="row-sub">Ticketing, BI, soporte</text>
+  <text x="400" y="370" class="cell-text-strong">Nativa, mismo orgId</text>
+  <text x="400" y="388" class="cell-text">Misma BD, mismas reglas, mismo IAM</text>
+  <text x="780" y="370" class="cell-text-strong">Vía webhooks/API</text>
+  <text x="780" y="388" class="cell-text">Glue code, drift de schema, latencia</text>
+
+  <!-- Row 4: Propiedad del dato -->
+  <rect x="60" y="400" width="1080" height="65" class="row-bg-alt"/>
+  <text x="80" y="427" class="row-label">Propiedad del dato y portabilidad</text>
+  <text x="80" y="447" class="row-sub">¿Qué pasa al salir?</text>
+  <text x="400" y="435" class="cell-text-strong">100% en GCP propio</text>
+  <text x="400" y="453" class="cell-text">Export ilimitado, sin lock-in funcional</text>
+  <text x="780" y="435" class="cell-text-strong">Export limitado por plan</text>
+  <text x="780" y="453" class="cell-text">Pipelines, scoring, automatizaciones no migrables</text>
+
+  <!-- Row 5: Cuándo gana -->
+  <rect x="60" y="465" width="1080" height="65" class="row-bg"/>
+  <text x="80" y="492" class="row-label">Cuándo gana</text>
+  <text x="80" y="512" class="row-sub">Recomendación honesta</text>
+  <text x="400" y="500" class="cell-text">Si ya tienes BD para ticketing/soporte</text>
+  <text x="400" y="518" class="cell-text">y equipo técnico interno</text>
+  <text x="780" y="500" class="cell-text">Si solo necesitas CRM y no tienes</text>
+  <text x="780" y="518" class="cell-text">capacidad de mantener infra propia</text>
+
+  <!-- Footer -->
+  <text x="60" y="565" class="meta" font-size="10">Fuente: Proportione · Comparativa propia, datos Firestore Q1 2026</text>
+</svg>

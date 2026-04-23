@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 22px; fill: #1a1a1a; font-weight: 600; letter-spacing: -0.3px; }
+    .subtitle { font-size: 14px; fill: #555; font-weight: 400; }
+    .meta { font-size: 11px; fill: #888; letter-spacing: 2px; text-transform: uppercase; }
+    .stage-label { font-size: 16px; fill: #1a1a1a; font-weight: 600; }
+    .stage-num { font-size: 36px; fill: #FFFFFF; font-weight: 700; letter-spacing: -1px; }
+    .stage-unit { font-size: 13px; fill: #FFFFFF; font-weight: 400; opacity: 0.85; }
+    .stage-desc { font-size: 12px; fill: #666; font-weight: 400; }
+    .drop { font-size: 13px; fill: #5F322F; font-weight: 600; }
+    .drop-sub { font-size: 11px; fill: #888; font-weight: 400; }
+  </style>
+
+  <!-- Header -->
+  <text x="60" y="55" class="meta">Exhibit 2 · Embudo de descubrimiento</text>
+  <text x="60" y="90" class="title">De 600 empresas raw a 20 conversaciones reales</text>
+  <text x="60" y="115" class="subtitle">Un filtro duro al principio cuesta menos que cien conversaciones imposibles después.</text>
+
+  <!-- Stage 1: 600 raw -->
+  <g transform="translate(60, 170)">
+    <polygon points="0,0 1080,0 1015,80 65,80" fill="#5F322F"/>
+    <text x="540" y="38" class="stage-num" text-anchor="middle">~600</text>
+    <text x="540" y="60" class="stage-unit" text-anchor="middle">empresas raw</text>
+  </g>
+  <text x="60" y="270" class="stage-label">01 Barrido Google Maps</text>
+  <text x="60" y="290" class="stage-desc">Búsqueda regional + sector industrial. BrowserAct + dedupe por dominio.</text>
+
+  <!-- Drop indicator 1→2 -->
+  <text x="1170" y="190" class="drop" text-anchor="end">−35%</text>
+  <text x="1170" y="208" class="drop-sub" text-anchor="end">restaurantes, farmacias,</text>
+  <text x="1170" y="222" class="drop-sub" text-anchor="end">servicios de proximidad</text>
+
+  <!-- Stage 2: 400 ICP -->
+  <g transform="translate(150, 320)">
+    <polygon points="0,0 900,0 832,75 68,75" fill="#6E8157"/>
+    <text x="450" y="36" class="stage-num" text-anchor="middle">~400</text>
+    <text x="450" y="58" class="stage-unit" text-anchor="middle">candidatas ICP</text>
+  </g>
+  <text x="150" y="415" class="stage-label">02 Filtro ICP automatizado</text>
+  <text x="150" y="435" class="stage-desc">Score por tamaño, claridad de industria y presencia web profesional.</text>
+
+  <!-- Drop indicator 2→3 -->
+  <text x="1170" y="442" class="drop" text-anchor="end">−95%</text>
+  <text x="1170" y="460" class="drop-sub" text-anchor="end">selección manual al detalle:</text>
+  <text x="1170" y="474" class="drop-sub" text-anchor="end">encaje de propuesta de valor</text>
+
+  <!-- Stage 3: 20 targets -->
+  <g transform="translate(490, 460)">
+    <polygon points="0,0 220,0 200,55 20,55" fill="#3B431C"/>
+    <text x="110" y="32" class="stage-num" text-anchor="middle">20</text>
+    <text x="110" y="50" class="stage-unit" text-anchor="middle">targets</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="60" y="525" class="meta" font-size="10">Fuente: Proportione · Ciclo Aveiro marzo 2026 · Rangos por sector industrial</text>
+</svg>

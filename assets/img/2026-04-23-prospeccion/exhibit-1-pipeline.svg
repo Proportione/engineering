@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .label { font-size: 20px; fill: #1a1a1a; font-weight: 600; letter-spacing: -0.3px; }
+    .sub { font-size: 14px; fill: #555; font-weight: 400; }
+    .meta { font-size: 12px; fill: #888; letter-spacing: 2px; text-transform: uppercase; }
+    .phase-num { font-size: 40px; fill: #5F322F; font-weight: 700; letter-spacing: -1px; }
+    .tool { font-size: 13px; fill: #3B431C; font-weight: 600; }
+    .arrow { stroke: #AEADB3; stroke-width: 2; fill: none; }
+    .box { fill: #FAFAF7; stroke: #AEADB3; stroke-width: 1; }
+    .box-accent { fill: #FAF6F5; stroke: #5F322F; stroke-width: 1.5; }
+    .rule-fill { fill: #5F322F; }
+    .rule-text { font-size: 14px; fill: #FFFFFF; font-weight: 500; }
+  </style>
+
+  <!-- Header block: rule statement -->
+  <rect x="60" y="40" width="1080" height="60" class="rule-fill"/>
+  <text x="80" y="68" class="rule-text" font-size="11" letter-spacing="2" style="text-transform: uppercase; opacity: 0.75">Regla innegociable</text>
+  <text x="80" y="90" class="rule-text" font-size="20" font-weight="600">Nunca contactar a un decisor sin contexto previo.</text>
+
+  <!-- 4 phase columns -->
+  <!-- Phase 1 -->
+  <g transform="translate(60, 150)">
+    <rect width="250" height="280" class="box"/>
+    <text x="20" y="50" class="phase-num">01</text>
+    <text x="20" y="90" class="meta">Fase</text>
+    <text x="20" y="120" class="label">Descubrimiento</text>
+    <line x1="20" y1="140" x2="90" y2="140" stroke="#5F322F" stroke-width="2"/>
+    <text x="20" y="172" class="sub">Barrido regional por sector</text>
+    <text x="20" y="192" class="sub">industrial. Filtro ICP duro</text>
+    <text x="20" y="212" class="sub">antes de tocar a nadie.</text>
+    <text x="20" y="248" class="tool">BrowserAct · Google Maps</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <path d="M 315 290 L 345 290" class="arrow" marker-end="url(#arr)"/>
+
+  <!-- Phase 2 -->
+  <g transform="translate(350, 150)">
+    <rect width="250" height="280" class="box"/>
+    <text x="20" y="50" class="phase-num">02</text>
+    <text x="20" y="90" class="meta">Fase</text>
+    <text x="20" y="120" class="label">Enriquecimiento</text>
+    <line x1="20" y1="140" x2="90" y2="140" stroke="#5F322F" stroke-width="2"/>
+    <text x="20" y="172" class="sub">Nombres, cargos y correos</text>
+    <text x="20" y="192" class="sub">personales verificados.</text>
+    <text x="20" y="212" class="sub">Cero genéricos info@.</text>
+    <text x="20" y="248" class="tool">Hunter · Racius · BrowserAct</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <path d="M 605 290 L 635 290" class="arrow" marker-end="url(#arr)"/>
+
+  <!-- Phase 3 -->
+  <g transform="translate(640, 150)">
+    <rect width="250" height="280" class="box"/>
+    <text x="20" y="50" class="phase-num">03</text>
+    <text x="20" y="90" class="meta">Fase</text>
+    <text x="20" y="120" class="label">Outreach dual</text>
+    <line x1="20" y1="140" x2="90" y2="140" stroke="#5F322F" stroke-width="2"/>
+    <text x="20" y="172" class="sub">Email con contenido propio</text>
+    <text x="20" y="192" class="sub">delante; LinkedIn detrás.</text>
+    <text x="20" y="212" class="sub">Nunca a la vez.</text>
+    <text x="20" y="248" class="tool">Brevo · SendPilot</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <path d="M 895 290 L 925 290" class="arrow" marker-end="url(#arr)"/>
+
+  <!-- Phase 4 -->
+  <g transform="translate(930, 150)">
+    <rect width="210" height="280" class="box-accent"/>
+    <text x="20" y="50" class="phase-num">04</text>
+    <text x="20" y="90" class="meta">Fase</text>
+    <text x="20" y="120" class="label">Conversión</text>
+    <line x1="20" y1="140" x2="90" y2="140" stroke="#5F322F" stroke-width="2"/>
+    <text x="20" y="172" class="sub">Suscripción a newsletter y</text>
+    <text x="20" y="192" class="sub">entrada al CRM como lead</text>
+    <text x="20" y="212" class="sub">con historial completo.</text>
+    <text x="20" y="248" class="tool">Firestore (fuente de verdad)</text>
+  </g>
+
+  <!-- Timing row -->
+  <text x="60" y="455" class="meta">Tiempo típico por región</text>
+  <g transform="translate(0, 480)">
+    <text x="185" y="0" class="sub" font-weight="600" text-anchor="middle">2 sesiones</text>
+    <text x="475" y="0" class="sub" font-weight="600" text-anchor="middle">2 sesiones</text>
+    <text x="765" y="0" class="sub" font-weight="600" text-anchor="middle">1 sesión</text>
+    <text x="1035" y="0" class="sub" font-weight="600" text-anchor="middle">continuo</text>
+  </g>
+
+  <!-- Source -->
+  <text x="60" y="515" class="meta" font-size="10">Fuente: Proportione · Ciclo Aveiro marzo 2026</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#AEADB3"/>
+    </marker>
+  </defs>
+</svg>
