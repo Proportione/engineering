@@ -5,6 +5,8 @@ date: 2026-03-24 23:00:00 +0000
 categories: post-mortem redes
 tags: [iot, wifi, asus, router, alexa, post-mortem]
 excerpt: "Seis Alexas dejaron de responder a las 22:00 y no volvieron solas. La causa no estaba en las Alexas ni en Amazon — estaba en un parámetro del router que tiene sentido en una oficina y ninguno en casa."
+image: /assets/img/heroes/post-1-roaming.svg
+image_alt: "Roaming Assistant: post-mortem de un router que echa los dispositivos IoT por la noche."
 ---
 
 Seis Alexas dejaron de responder a las 22:00 del 23 de marzo. Ninguna reconectó por sí sola. No había corte de luz, no había actualización pendiente, no había cambios en la red durante el día.

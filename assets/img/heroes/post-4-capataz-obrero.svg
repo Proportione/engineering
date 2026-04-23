@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .bg { fill: #5F322F; }
+    .label { font-size: 14px; fill: #FFFFFF; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7; }
+    .title { font-size: 56px; fill: #FFFFFF; font-weight: 700; letter-spacing: -1.5px; }
+    .subtitle { font-size: 22px; fill: #FFFFFF; font-weight: 400; letter-spacing: -0.3px; opacity: 0.85; }
+    .accent { stroke: #FFFFFF; stroke-width: 3; fill: none; }
+    .footer { font-size: 13px; fill: #FFFFFF; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.65; }
+  </style>
+
+  <rect width="1200" height="630" class="bg"/>
+
+  <!-- Top label -->
+  <text x="80" y="100" class="label">Post 04 · IA local</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="125" x2="180" y2="125" class="accent"/>
+
+  <!-- Title (multi-line) -->
+  <text x="80" y="265" class="title">Capataz y Obrero:</text>
+  <text x="80" y="335" class="title">por qué Claude Code</text>
+  <text x="80" y="405" class="title">delega a un LLM local</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="465" class="subtitle">El frontier piensa, el modelo local ejecuta la rutina,</text>
+  <text x="80" y="495" class="subtitle">MCP es el puente. El patrón que monta sobre Aveiro.</text>
+
+  <!-- Two blocks connected accent (right side) -->
+  <g transform="translate(900, 250)" opacity="0.4">
+    <!-- Block 1 (Capataz) -->
+    <rect x="0" y="0" width="80" height="80" fill="#FFFFFF" opacity="0.9"/>
+    <text x="40" y="50" font-size="28" fill="#5F322F" font-weight="700" text-anchor="middle">C</text>
+
+    <!-- Connection line + arrow -->
+    <line x1="80" y1="40" x2="170" y2="40" class="accent" stroke-dasharray="6,4"/>
+    <polygon points="170,35 180,40 170,45" fill="#FFFFFF" opacity="0.9"/>
+
+    <!-- Block 2 (Obrero) -->
+    <rect x="180" y="0" width="80" height="80" class="accent" stroke-width="3"/>
+    <text x="220" y="50" font-size="28" fill="#FFFFFF" font-weight="700" text-anchor="middle">O</text>
+
+    <!-- MCP label -->
+    <text x="125" y="22" font-size="11" fill="#FFFFFF" font-weight="700" letter-spacing="2" text-anchor="middle" opacity="0.9">MCP</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="80" y="585" class="footer">engineering.proportione.com</text>
+</svg>

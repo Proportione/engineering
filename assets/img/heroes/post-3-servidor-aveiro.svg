@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .bg { fill: #5F322F; }
+    .label { font-size: 14px; fill: #FFFFFF; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7; }
+    .title { font-size: 56px; fill: #FFFFFF; font-weight: 700; letter-spacing: -1.5px; }
+    .subtitle { font-size: 22px; fill: #FFFFFF; font-weight: 400; letter-spacing: -0.3px; opacity: 0.85; }
+    .accent { stroke: #FFFFFF; stroke-width: 3; fill: none; }
+    .footer { font-size: 13px; fill: #FFFFFF; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.65; }
+  </style>
+
+  <rect width="1200" height="630" class="bg"/>
+
+  <!-- Top label -->
+  <text x="80" y="100" class="label">Post 03 · Infraestructura</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="125" x2="180" y2="125" class="accent"/>
+
+  <!-- Title (multi-line) -->
+  <text x="80" y="265" class="title">Servidor propio</text>
+  <text x="80" y="335" class="title">para una consultoría AI-first:</text>
+  <text x="80" y="405" class="title">cuatro opciones, dos trampas</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="465" class="subtitle">El marco con el que elegimos hardware, la BOM real</text>
+  <text x="80" y="495" class="subtitle">y la lección sobre comprar enterprise en marketplaces.</text>
+
+  <!-- Server / chip accent (right side) -->
+  <g transform="translate(910, 240)" opacity="0.4">
+    <!-- CPU outline -->
+    <rect x="0" y="0" width="180" height="180" class="accent" stroke-width="3"/>
+    <!-- Pins on each side -->
+    <g stroke="#FFFFFF" stroke-width="3" opacity="0.9">
+      <line x1="-15" y1="30" x2="0" y2="30"/>
+      <line x1="-15" y1="60" x2="0" y2="60"/>
+      <line x1="-15" y1="90" x2="0" y2="90"/>
+      <line x1="-15" y1="120" x2="0" y2="120"/>
+      <line x1="-15" y1="150" x2="0" y2="150"/>
+      <line x1="180" y1="30" x2="195" y2="30"/>
+      <line x1="180" y1="60" x2="195" y2="60"/>
+      <line x1="180" y1="90" x2="195" y2="90"/>
+      <line x1="180" y1="120" x2="195" y2="120"/>
+      <line x1="180" y1="150" x2="195" y2="150"/>
+      <line x1="30" y1="-15" x2="30" y2="0"/>
+      <line x1="60" y1="-15" x2="60" y2="0"/>
+      <line x1="90" y1="-15" x2="90" y2="0"/>
+      <line x1="120" y1="-15" x2="120" y2="0"/>
+      <line x1="150" y1="-15" x2="150" y2="0"/>
+      <line x1="30" y1="180" x2="30" y2="195"/>
+      <line x1="60" y1="180" x2="60" y2="195"/>
+      <line x1="90" y1="180" x2="90" y2="195"/>
+      <line x1="120" y1="180" x2="120" y2="195"/>
+      <line x1="150" y1="180" x2="150" y2="195"/>
+    </g>
+    <!-- Inner square -->
+    <rect x="40" y="40" width="100" height="100" class="accent" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Footer -->
+  <text x="80" y="585" class="footer">engineering.proportione.com</text>
+</svg>

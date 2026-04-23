@@ -5,6 +5,8 @@ date: 2026-04-23 12:00:00 +0000
 categories: architecture prospeccion
 tags: [prospeccion, browseract, sendpilot, firestore, crm, b2b]
 excerpt: "El email frío ya no rinde. El uno-a-uno manual tampoco escala. Este es el pipeline que construimos para prospección industrial en Portugal — cuatro piezas, dos decisiones de arquitectura y una regla innegociable."
+image: /assets/img/heroes/post-2-prospeccion.svg
+image_alt: "Prospección B2B industrial sin email frío: cuatro herramientas y una regla."
 ---
 
 El email frío lleva tiempo sin rendir. Las tasas de respuesta por debajo del 1 % son habituales, los filtros de spam cada vez más duros y los compradores industriales — nuestra audiencia — reconocen el patrón desde la primera línea. La salida fácil es contratar una agencia que lance diez mil emails más. La salida lenta es ir uno a uno, a mano, como en 2008.

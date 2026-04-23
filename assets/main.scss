@@ -41,3 +41,14 @@ p > em:only-child {
   margin-bottom: 1.5em;
   font-style: normal;
 }
+
+.post-hero {
+  margin: 0 0 2em;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+}

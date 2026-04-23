@@ -5,6 +5,8 @@ date: 2026-04-23 13:00:00 +0000
 categories: architecture infraestructura
 tags: [servidor, aveiro, proxmox, zfs, hardware, ia-local]
 excerpt: "Decidimos no migrar a un hyperscaler ni encadenar Macs. Va el marco con el que elegimos servidor propio, la BOM real, las dos trampas que casi rompen la decisión y la lección sobre comprar hardware enterprise en marketplaces europeos."
+image: /assets/img/heroes/post-3-servidor-aveiro.svg
+image_alt: "Servidor propio para una consultoría AI-first: cuatro opciones, dos trampas y una decisión."
 ---
 
 Una consultoría pequeña con foco en IA tiene tres caminos para su capa de cómputo: alquilarlo todo en la nube, encadenar Macs como puestos de trabajo, o montar un servidor propio. Cada camino esconde un coste distinto. Decidimos el tercero — un servidor x86 en nuestra sede de Aveiro — y este post cuenta cómo se llega ahí sin caer en la tentación del catálogo más caro ni del más barato.

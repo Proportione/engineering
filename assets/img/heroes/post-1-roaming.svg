@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .bg { fill: #5F322F; }
+    .label { font-size: 14px; fill: #FFFFFF; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7; }
+    .title { font-size: 56px; fill: #FFFFFF; font-weight: 700; letter-spacing: -1.5px; }
+    .subtitle { font-size: 22px; fill: #FFFFFF; font-weight: 400; letter-spacing: -0.3px; opacity: 0.85; }
+    .accent { stroke: #FFFFFF; stroke-width: 3; fill: none; }
+    .footer { font-size: 13px; fill: #FFFFFF; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.65; }
+  </style>
+
+  <rect width="1200" height="630" class="bg"/>
+
+  <!-- Top label -->
+  <text x="80" y="100" class="label">Post 01 · Post-mortem</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="125" x2="180" y2="125" class="accent"/>
+
+  <!-- Title (multi-line) -->
+  <text x="80" y="265" class="title">Cuando el router inteligente</text>
+  <text x="80" y="335" class="title">desconecta tus IoT:</text>
+  <text x="80" y="405" class="title">el caso del Roaming Assistant</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="465" class="subtitle">Seis Alexas dejaron de responder a las 22:00.</text>
+  <text x="80" y="495" class="subtitle">El problema no era el router, era un parámetro del router.</text>
+
+  <!-- WiFi waves accent (right side) -->
+  <g transform="translate(960, 270) rotate(-45)" opacity="0.35">
+    <path d="M 0 0 Q 35 -50 70 0" class="accent" stroke-width="4"/>
+    <path d="M -25 25 Q 35 -75 95 25" class="accent" stroke-width="4"/>
+    <path d="M -50 50 Q 35 -100 120 50" class="accent" stroke-width="4"/>
+    <circle cx="35" cy="0" r="8" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- Footer -->
+  <text x="80" y="585" class="footer">engineering.proportione.com</text>
+</svg>
