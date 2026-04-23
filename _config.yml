@@ -1,0 +1,36 @@
+title: Proportione Engineering
+description: >-
+  Post-mortems, decisiones de arquitectura y material reutilizable
+  de una consultoría ibérica AI-first.
+url: https://engineering.proportione.com
+lang: es
+timezone: Europe/Lisbon
+
+author:
+  name: Proportione
+  email: contacto@proportione.com
+
+theme: minima
+minima:
+  skin: auto
+  date_format: "%-d %b %Y"
+  social_links:
+    - { platform: github, user_url: "https://github.com/Proportione" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/company/proportione" }
+
+show_excerpts: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+header_pages:
+  - about.md
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
