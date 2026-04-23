@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Prospección B2B industrial sin email frío: cuatro herramientas y una regla"
-date: 2026-04-23 14:00:00 +0000
+date: 2026-04-23 12:00:00 +0000
 categories: architecture prospeccion
 tags: [prospeccion, browseract, sendpilot, firestore, crm, b2b]
 excerpt: "El email frío ya no rinde. El uno-a-uno manual tampoco escala. Este es el pipeline que construimos para prospección industrial en Portugal — cuatro piezas, dos decisiones de arquitectura y una regla innegociable."
