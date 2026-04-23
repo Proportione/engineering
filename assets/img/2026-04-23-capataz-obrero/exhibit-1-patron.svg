@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 22px; fill: #1a1a1a; font-weight: 600; letter-spacing: -0.3px; }
+    .subtitle { font-size: 14px; fill: #555; font-weight: 400; }
+    .meta { font-size: 11px; fill: #888; letter-spacing: 2px; text-transform: uppercase; }
+    .role-tag { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+    .role-name { font-size: 26px; fill: #FFFFFF; font-weight: 700; letter-spacing: -0.5px; }
+    .role-tool { font-size: 13px; fill: #FFFFFF; font-weight: 500; opacity: 0.9; }
+    .responsibility { font-size: 12px; fill: #FFFFFF; font-weight: 400; opacity: 0.85; }
+    .capataz { fill: #5F322F; }
+    .obrero { fill: #3B431C; }
+    .mcp-line { stroke: #5F322F; stroke-width: 2; fill: none; stroke-dasharray: 6,4; }
+    .mcp-label { font-size: 11px; fill: #5F322F; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+  </style>
+
+  <!-- Header -->
+  <text x="60" y="55" class="meta">Exhibit 1 · Patrón</text>
+  <text x="60" y="90" class="title">El patrón Capataz y Obrero</text>
+  <text x="60" y="115" class="subtitle">Dos roles complementarios, una interfaz estable. Asimetría por diseño.</text>
+
+  <!-- Capataz block -->
+  <g transform="translate(80, 175)">
+    <rect width="440" height="280" class="capataz" rx="3"/>
+    <text x="30" y="50" class="role-tag" fill="#FFFFFF" opacity="0.7">Capataz</text>
+    <text x="30" y="90" class="role-name">Claude Code</text>
+    <text x="30" y="115" class="role-tool">Frontier model · en el portátil</text>
+
+    <line x1="30" y1="135" x2="120" y2="135" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+
+    <text x="30" y="170" class="responsibility">→ Lee el repo, entiende el problema</text>
+    <text x="30" y="195" class="responsibility">→ Descompone en pasos concretos</text>
+    <text x="30" y="220" class="responsibility">→ Decide qué delega y qué no</text>
+    <text x="30" y="245" class="responsibility">→ Revisa el resultado y cierra</text>
+  </g>
+
+  <!-- MCP arrow (bidirectional) -->
+  <g transform="translate(525, 290)">
+    <line x1="10" y1="25" x2="140" y2="25" class="mcp-line"/>
+    <polygon points="140,20 150,25 140,30" fill="#5F322F"/>
+    <polygon points="10,20 0,25 10,30" fill="#5F322F"/>
+    <text x="75" y="10" class="mcp-label" text-anchor="middle">MCP</text>
+    <text x="75" y="50" text-anchor="middle" font-size="10" fill="#888" letter-spacing="1">Model Context Protocol</text>
+  </g>
+
+  <!-- Obrero block -->
+  <g transform="translate(680, 175)">
+    <rect width="440" height="280" class="obrero" rx="3"/>
+    <text x="30" y="50" class="role-tag" fill="#FFFFFF" opacity="0.7">Obrero</text>
+    <text x="30" y="90" class="role-name">Qwen 14B (Ollama)</text>
+    <text x="30" y="115" class="role-tool">LLM local · en Aveiro</text>
+
+    <line x1="30" y1="135" x2="120" y2="135" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+
+    <text x="30" y="170" class="responsibility">→ Recibe instrucción acotada</text>
+    <text x="30" y="195" class="responsibility">→ Devuelve resultado acotado</text>
+    <text x="30" y="220" class="responsibility">→ No decide qué hacer</text>
+    <text x="30" y="245" class="responsibility">→ Coste cero por petición</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="60" y="510" class="meta" font-size="10">Fuente: Proportione · Patrón Capataz-Obrero · Stack Aveiro Q2 2026</text>
+</svg>

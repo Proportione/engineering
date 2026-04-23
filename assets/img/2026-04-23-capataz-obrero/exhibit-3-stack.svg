@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Raleway, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 22px; fill: #1a1a1a; font-weight: 600; letter-spacing: -0.3px; }
+    .subtitle { font-size: 14px; fill: #555; font-weight: 400; }
+    .meta { font-size: 11px; fill: #888; letter-spacing: 2px; text-transform: uppercase; }
+    .layer-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+    .layer-name { font-size: 16px; font-weight: 700; }
+    .layer-text { font-size: 12px; font-weight: 400; }
+    .arrow { stroke: #AEADB3; stroke-width: 2; fill: none; }
+    .arrow-text { font-size: 11px; fill: #5F322F; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+    .box-portatil { fill: #5F322F; }
+    .box-tailscale { fill: #AEADB3; }
+    .box-aveiro { fill: #3B431C; }
+    .box-mobile { fill: #6E8157; }
+  </style>
+
+  <!-- Header -->
+  <text x="60" y="55" class="meta">Exhibit 3 · Stack técnico</text>
+  <text x="60" y="90" class="title">Cuatro componentes, cero dependencias externas</text>
+  <text x="60" y="115" class="subtitle">El servidor Aveiro no tiene IP pública. Solo dispositivos del tailnet pueden hablarle.</text>
+
+  <!-- Box 1: Portátil -->
+  <g transform="translate(60, 200)">
+    <rect width="240" height="180" class="box-portatil" rx="3"/>
+    <text x="20" y="35" class="layer-tag" fill="#FFFFFF" opacity="0.7">Cliente · MacBook</text>
+    <text x="20" y="65" class="layer-name" fill="#FFFFFF">Claude Code</text>
+    <line x1="20" y1="80" x2="80" y2="80" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+    <text x="20" y="105" class="layer-text" fill="#FFFFFF" opacity="0.85">+ servidor MCP local</text>
+    <text x="20" y="125" class="layer-text" fill="#FFFFFF" opacity="0.85">(200 líneas Node)</text>
+    <text x="20" y="155" class="layer-text" fill="#FFFFFF" opacity="0.7">Prompts versionados</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 305 290 L 350 290" class="arrow" marker-end="url(#arr)"/>
+
+  <!-- Box 2: Tailscale -->
+  <g transform="translate(355, 230)">
+    <rect width="200" height="120" class="box-tailscale" rx="3"/>
+    <text x="20" y="35" class="layer-tag" fill="#1a1a1a" opacity="0.7">Red privada</text>
+    <text x="20" y="65" class="layer-name" fill="#1a1a1a">Tailscale</text>
+    <text x="20" y="95" class="layer-text" fill="#1a1a1a" opacity="0.85">Sin IP pública,</text>
+    <text x="20" y="113" class="layer-text" fill="#1a1a1a" opacity="0.85">sin puertos abiertos.</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 560 290 L 605 290" class="arrow" marker-end="url(#arr)"/>
+
+  <!-- Box 3: Aveiro -->
+  <g transform="translate(610, 200)">
+    <rect width="280" height="180" class="box-aveiro" rx="3"/>
+    <text x="20" y="35" class="layer-tag" fill="#FFFFFF" opacity="0.7">Servidor · Aveiro</text>
+    <text x="20" y="65" class="layer-name" fill="#FFFFFF">Ollama</text>
+    <line x1="20" y1="80" x2="80" y2="80" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+    <text x="20" y="105" class="layer-text" fill="#FFFFFF" opacity="0.85">API estable :11434</text>
+    <text x="20" y="125" class="layer-text" fill="#FFFFFF" opacity="0.85">Modelos versionados</text>
+    <text x="20" y="155" class="layer-text" fill="#FFFFFF" opacity="0.7">Sustituible sin tocar el resto</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M 895 290 L 935 290" class="arrow" marker-end="url(#arr)"/>
+
+  <!-- Box 4: Modelo -->
+  <g transform="translate(940, 230)">
+    <rect width="200" height="120" class="box-aveiro" rx="3" opacity="0.85"/>
+    <text x="20" y="35" class="layer-tag" fill="#FFFFFF" opacity="0.7">Modelo</text>
+    <text x="20" y="65" class="layer-name" fill="#FFFFFF">Qwen 2.5 Coder 14B</text>
+    <text x="20" y="95" class="layer-text" fill="#FFFFFF" opacity="0.85">Cuantizado Q4 (4 bits)</text>
+    <text x="20" y="113" class="layer-text" fill="#FFFFFF" opacity="0.85">~10 GB VRAM</text>
+  </g>
+
+  <!-- Mobile bonus -->
+  <g transform="translate(610, 410)">
+    <rect width="280" height="80" class="box-mobile" rx="3" opacity="0.8"/>
+    <text x="20" y="30" class="layer-tag" fill="#FFFFFF" opacity="0.7">Bonus · iOS opcional</text>
+    <text x="20" y="55" class="layer-text" fill="#FFFFFF" opacity="0.95" font-weight="600">Apps Enchanted / Reins → mismo endpoint</text>
+    <text x="20" y="73" class="layer-text" fill="#FFFFFF" opacity="0.8" font-size="11">Mismo modelo accesible desde iPhone vía tailnet</text>
+  </g>
+
+  <!-- Arrow Mobile up -->
+  <path d="M 750 405 L 750 380" class="arrow" stroke-dasharray="4,3"/>
+
+  <!-- Footer -->
+  <text x="60" y="520" class="meta" font-size="10">Fuente: Proportione · Stack capataz-obrero Aveiro · Versión Fase 1</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#AEADB3"/>
+    </marker>
+  </defs>
+</svg>
