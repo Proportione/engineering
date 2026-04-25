@@ -76,6 +76,18 @@ body.landing {
   .site-footer {
     border-top: 1px solid $landing-rule;
     background: $landing-paper;
+
+    // Override minima's #828282 (ratio 3.59 on paper bg) for WCAG AA
+    .site-footer-credits,
+    .footer-col,
+    .footer-col p,
+    .footer-col ul,
+    .footer-col li,
+    .p-name,
+    .u-email,
+    a {
+      color: $landing-ink;
+    }
   }
 }
 
