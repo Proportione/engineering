@@ -113,7 +113,7 @@ body.landing {
 .landing-section-title {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: clamp(2rem, 4vw + 0.5rem, 3.25rem);
+  font-size: #{unquote("clamp(2rem, 4vw + 0.5rem, 3.25rem)")};
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: $landing-ink;
@@ -122,14 +122,14 @@ body.landing {
 
 // Hero -----------------------------------------------------------------
 .landing-hero {
-  padding: clamp(4rem, 10vw, 8rem) 0 clamp(3rem, 7vw, 5rem);
+  padding: #{unquote("clamp(4rem, 10vw, 8rem)")} 0 #{unquote("clamp(3rem, 7vw, 5rem)")};
   border-bottom: 1px solid $landing-rule;
 }
 
 .landing-display {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: clamp(2.4rem, 6vw + 0.5rem, 5rem);
+  font-size: #{unquote("clamp(2.4rem, 6vw + 0.5rem, 5rem)")};
   line-height: 1.02;
   letter-spacing: -0.025em;
   color: $proportione-brand;
@@ -147,7 +147,7 @@ body.landing {
 
 .landing-lede {
   max-width: 38em;
-  font-size: clamp(1.1rem, 1vw + 0.85rem, 1.35rem);
+  font-size: #{unquote("clamp(1.1rem, 1vw + 0.85rem, 1.35rem)")};
   line-height: 1.5;
   color: $landing-mute;
   margin: 0;
@@ -155,7 +155,7 @@ body.landing {
 
 // Insight (split: stat + body) -----------------------------------------
 .landing-insight {
-  padding: clamp(3rem, 6vw, 5rem) 0;
+  padding: #{unquote("clamp(3rem, 6vw, 5rem)")} 0;
   border-bottom: 1px solid $landing-rule;
 }
 
@@ -167,7 +167,7 @@ body.landing {
 .landing-stat {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-size: #{unquote("clamp(2.5rem, 5vw, 3.75rem)")};
   line-height: 1;
   letter-spacing: -0.02em;
   color: $proportione-brand;
@@ -190,7 +190,7 @@ body.landing {
 }
 
 .landing-insight-body p {
-  font-size: clamp(1.05rem, 0.6vw + 0.95rem, 1.2rem);
+  font-size: #{unquote("clamp(1.05rem, 0.6vw + 0.95rem, 1.2rem)")};
   line-height: 1.55;
   margin: 0 0 1rem;
   color: $landing-ink;
@@ -202,7 +202,7 @@ body.landing {
 
 // Framework 20-60-20 ---------------------------------------------------
 .landing-framework {
-  padding: clamp(3rem, 6vw, 5rem) 0;
+  padding: #{unquote("clamp(3rem, 6vw, 5rem)")} 0;
   border-bottom: 1px solid $landing-rule;
 }
 
@@ -267,7 +267,7 @@ body.landing {
 }
 
 .landing-framework-coda {
-  font-size: clamp(1.1rem, 0.6vw + 1rem, 1.3rem);
+  font-size: #{unquote("clamp(1.1rem, 0.6vw + 1rem, 1.3rem)")};
   line-height: 1.45;
   color: $landing-ink;
   font-style: normal;
@@ -279,7 +279,7 @@ body.landing {
 
 // Capabilities ---------------------------------------------------------
 .landing-capabilities {
-  padding: clamp(3rem, 6vw, 5rem) 0;
+  padding: #{unquote("clamp(3rem, 6vw, 5rem)")} 0;
   border-bottom: 1px solid $landing-rule;
 }
 
@@ -329,7 +329,7 @@ body.landing {
 
 // Proof ----------------------------------------------------------------
 .landing-proof {
-  padding: clamp(3rem, 6vw, 5rem) 0;
+  padding: #{unquote("clamp(3rem, 6vw, 5rem)")} 0;
   border-bottom: 1px solid $landing-rule;
 }
 
@@ -358,7 +358,7 @@ body.landing {
 
 // Insights (posts list) ------------------------------------------------
 .landing-insights {
-  padding: clamp(3rem, 6vw, 5rem) 0;
+  padding: #{unquote("clamp(3rem, 6vw, 5rem)")} 0;
   border-bottom: 1px solid $landing-rule;
 }
 
@@ -442,7 +442,7 @@ body.landing {
 
 // CTA ------------------------------------------------------------------
 .landing-cta {
-  padding: clamp(3rem, 6vw, 5rem) 0 clamp(4rem, 8vw, 7rem);
+  padding: #{unquote("clamp(3rem, 6vw, 5rem)")} 0 #{unquote("clamp(4rem, 8vw, 7rem)")};
 }
 
 .landing-cta-list {
@@ -478,7 +478,7 @@ body.landing {
 .landing-cta-label {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: clamp(1.1rem, 0.5vw + 1rem, 1.35rem);
+  font-size: #{unquote("clamp(1.1rem, 0.5vw + 1rem, 1.35rem)")};
   letter-spacing: -0.01em;
 }
 
