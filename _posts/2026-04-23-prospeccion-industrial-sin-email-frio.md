@@ -91,4 +91,4 @@ El pipeline completo corre desde el ordenador de una persona en un par de sesion
 
 ---
 
-*Si estás montando algo parecido y atascas en alguna parte concreta, abre una [Discussion](https://github.com/Proportione/proportione-plugins/discussions) o escribe a [contacto@proportione.com](mailto:contacto@proportione.com). Compartimos las decisiones que tomamos, no las cifras que tomaron nuestros clientes.*
+*Si estás montando algo parecido y atascas en alguna parte concreta, abre una [Discussion](https://github.com/Proportione/proportione-plugins/discussions) o escribe a [info@proportione.com](mailto:info@proportione.com). Compartimos las decisiones que tomamos, no las cifras que tomaron nuestros clientes.*

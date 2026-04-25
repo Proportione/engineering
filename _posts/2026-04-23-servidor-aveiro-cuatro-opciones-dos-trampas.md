@@ -92,4 +92,4 @@ El servidor entra en servicio durante mayo. El siguiente post de esta serie cont
 
 ---
 
-*Si estás evaluando algo parecido y quieres contraste honesto sobre alguna decisión concreta, abre una [Discussion](https://github.com/Proportione/proportione-plugins/discussions) o escribe a [contacto@proportione.com](mailto:contacto@proportione.com).*
+*Si estás evaluando algo parecido y quieres contraste honesto sobre alguna decisión concreta, abre una [Discussion](https://github.com/Proportione/proportione-plugins/discussions) o escribe a [info@proportione.com](mailto:info@proportione.com).*

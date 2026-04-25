@@ -35,7 +35,7 @@ Cada post lleva fecha de publicación, autor (Proportione) y URL canónica. Sche
 
 ## Contacto y discusión
 
-- Email: contacto@proportione.com
+- Email: info@proportione.com
 - Discussions del repositorio público: https://github.com/Proportione/proportione-plugins/discussions
 - Proportione web: https://proportione.com
 - LinkedIn: https://linkedin.com/company/proportione

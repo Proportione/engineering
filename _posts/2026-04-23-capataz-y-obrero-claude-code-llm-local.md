@@ -84,4 +84,4 @@ Cuando las tres se cumplen, el patrón es genuinamente diferencial. No por el ah
 
 ---
 
-*Próximo post de la serie: cómo el patrón cambia el ticketing y la gestión de SLA cuando uno de los pasos es "esperar respuesta del cliente" y otro es "una persona del equipo está revisando". Para hablar de este, abre una [Discussion](https://github.com/Proportione/proportione-plugins/discussions) o escribe a [contacto@proportione.com](mailto:contacto@proportione.com).*
+*Próximo post de la serie: cómo el patrón cambia el ticketing y la gestión de SLA cuando uno de los pasos es "esperar respuesta del cliente" y otro es "una persona del equipo está revisando". Para hablar de este, abre una [Discussion](https://github.com/Proportione/proportione-plugins/discussions) o escribe a [info@proportione.com](mailto:info@proportione.com).*

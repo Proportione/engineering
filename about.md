@@ -27,4 +27,4 @@ Consultoría en IA aplicada desde 2008 (BrainSINS → Gartner Cool Vendor 2014 �
 - [github.com/Proportione](https://github.com/Proportione) — marketplace de plugins Claude Code y showcase.
 - [proportione.com](https://proportione.com) — servicios, casos, contacto.
 - [security@proportione.com](mailto:security@proportione.com) — reportes de seguridad.
-- [contacto@proportione.com](mailto:contacto@proportione.com) — resto de asuntos.
+- [info@proportione.com](mailto:info@proportione.com) — resto de asuntos.
