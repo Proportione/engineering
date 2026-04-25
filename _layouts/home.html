@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+{%- include head.html -%}
+<body class="landing">
+  {%- include header.html -%}
+
+  <main class="landing-main" aria-label="Content">
+
+    <section class="landing-hero">
+      <div class="landing-wrapper">
+        <h1 class="landing-display">
+          <span class="landing-display-line">Technology that fits your people.</span>
+          <span class="landing-display-line landing-display-line--alt">Not the other way around.</span>
+        </h1>
+        <p class="landing-lede">Proportione builds technology around how your team already works &mdash; then transfers the knowledge so your team can run it without us.</p>
+      </div>
+    </section>
+
+    <section class="landing-insight">
+      <div class="landing-wrapper landing-wrapper--split">
+        <div class="landing-insight-stat">
+          <p class="landing-stat">20<span class="landing-stat-sep" aria-hidden="true">&middot;</span>60<span class="landing-stat-sep" aria-hidden="true">&middot;</span>20</p>
+          <p class="landing-stat-caption">Our operating model</p>
+        </div>
+        <div class="landing-insight-body">
+          <p>Most projects we are asked to rescue have one thing in common. The technology works. The team does not use it.</p>
+          <p>Before anything else, we look at how your people already work. Then we build around them &mdash; not the other way.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-framework">
+      <div class="landing-wrapper">
+        <p class="landing-eyebrow">How we work</p>
+        <h2 class="landing-section-title">20 &middot; 60 &middot; 20.</h2>
+        <div class="landing-framework-grid">
+          <div class="landing-framework-cell">
+            <span class="landing-framework-num">20%</span>
+            <h3>Your people decide.</h3>
+            <p>Strategy, constraints, what matters and what does not. Your team frames the problem.</p>
+          </div>
+          <div class="landing-framework-cell landing-framework-cell--accent">
+            <span class="landing-framework-num">60%</span>
+            <h3>AI does the heavy lifting.</h3>
+            <p>Code, drafts, transformations, retrieval. The repetitive, the dense, the slow.</p>
+          </div>
+          <div class="landing-framework-cell">
+            <span class="landing-framework-num">20%</span>
+            <h3>Your people validate.</h3>
+            <p>They check, they own the decision, they sign off. The accountability stays with them.</p>
+          </div>
+        </div>
+        <p class="landing-framework-coda">The intelligence that matters is human. The leverage is technology.</p>
+      </div>
+    </section>
+
+    <section class="landing-capabilities">
+      <div class="landing-wrapper">
+        <p class="landing-eyebrow">What we are hired for</p>
+        <div class="landing-capabilities-grid">
+          <article class="landing-capability">
+            <h3>AI without the theatre.</h3>
+            <p>Production systems that use LLMs, retrieval and agents where the return is measurable. Shipping on OpenAI since the Davinci alpha (January 2021) and on Claude since launch.</p>
+          </article>
+          <article class="landing-capability">
+            <h3>Platforms that hand back the keys.</h3>
+            <p>Cloud-native platforms &mdash; CRMs, learning environments, internal portals. Built so your team can run them without us when the time comes.</p>
+          </article>
+          <article class="landing-capability">
+            <h3>Automation as engineering.</h3>
+            <p>Pipelines that connect CRM, marketing, support and operations. We treat automation as code, not as plumbing.</p>
+          </article>
+          <article class="landing-capability">
+            <h3>Security from day one.</h3>
+            <p>GDPR by design. Secrets in Secret Manager. Audit trails on by default. We document what we ship.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-proof">
+      <div class="landing-wrapper">
+        <p class="landing-eyebrow">Selected work</p>
+        <ul class="landing-proof-list">
+          <li><span class="landing-proof-name">Osakidetza</span> &mdash; Curated catalogue of public-health video content for a regional learning environment.</li>
+          <li><span class="landing-proof-name">IITD</span> &mdash; Eighteen-month operating partnership: platform, secretariat panel, certificates, CRM.</li>
+          <li><span class="landing-proof-name">porqueViven</span> &mdash; Public open-source repository: QR system for BIM-tagged elements.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="landing-insights">
+      <div class="landing-wrapper">
+        <p class="landing-eyebrow">What we publish</p>
+        <h2 class="landing-section-title">Engineering insights.</h2>
+        <ul class="landing-insights-list">
+          {% for post in site.posts limit:6 %}
+          <li class="landing-insight-item">
+            <a class="landing-insight-link" href="{{ post.url | relative_url }}">
+              <span class="landing-insight-title">{{ post.title | escape }}</span>
+              <span class="landing-insight-meta">{{ post.date | date: "%-d %b %Y" }}</span>
+            </a>
+            {%- if post.excerpt -%}
+            <p class="landing-insight-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+            {%- endif -%}
+          </li>
+          {% endfor %}
+        </ul>
+        <p class="landing-insights-foot"><a href="{{ '/feed.xml' | relative_url }}">RSS</a> &middot; <a href="https://www.linkedin.com/company/proportione">LinkedIn</a></p>
+      </div>
+    </section>
+
+    <section class="landing-cta">
+      <div class="landing-wrapper">
+        <p class="landing-eyebrow">Next step</p>
+        <h2 class="landing-section-title">Three ways to talk to us.</h2>
+        <ol class="landing-cta-list">
+          <li class="landing-cta-item landing-cta-item--primary">
+            <a href="https://proportione.com/inteligencia-artificial/">
+              <span class="landing-cta-label">Read how we think about AI</span>
+              <span class="landing-cta-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li class="landing-cta-item">
+            <a href="mailto:info@proportione.com">
+              <span class="landing-cta-label">Email us</span>
+              <span class="landing-cta-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li class="landing-cta-item">
+            <a href="https://wa.me/351928335234">
+              <span class="landing-cta-label">WhatsApp Javier (PT &middot; ES &middot; EN)</span>
+              <span class="landing-cta-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  {%- include footer.html -%}
+</body>
+</html>
