@@ -16,8 +16,6 @@ Engineering blog operado por el equipo técnico de Proportione (https://proporti
 
 - [Servidor propio para una consultoría AI-first: cuatro opciones, dos trampas y una decisión](https://engineering.proportione.com/architecture/infraestructura/2026/04/23/servidor-aveiro-cuatro-opciones-dos-trampas.html): marco de decisión hardware (cloud hyperscaler vs Mac Mini vs NAS vs servidor x86 propio) para nodo Aveiro. BOM enterprise comprable desde Portugal, plan de fases (Proxmox + ZFS + GPU 16 GB), las dos trampas que aprendimos por el camino: especificación vs disponibilidad real de stock, fragmentación de pedidos y anti-fraude en marketplaces europeos.
 
-- [Capataz y Obrero: por qué Claude Code delega a un LLM local en lugar de hacerlo él](https://engineering.proportione.com/architecture/ia-local/2026/04/23/capataz-y-obrero-claude-code-llm-local.html): patrón de división de trabajo entre Claude Code (frontier model en el portátil) y Qwen 2.5 Coder 14B (LLM local en Ollama sobre Aveiro), con MCP como interfaz. Reparto de tareas (clasificación y formato cerrado al obrero, juicio sobre el qué al capataz), stack técnico sin IP pública (Tailscale), tradeoffs honestos.
-
 ## Equipo
 
 - Mayte Tortosa — CEO & Co-Fundadora Proportione: 25+ años en RRHH y transformación organizativa. Coach ejecutiva certificada (700 h UAM). Abogada. Profesora en UCM, UNIE, EAE.
@@ -36,6 +34,5 @@ Cada post lleva fecha de publicación, autor (Proportione) y URL canónica. Sche
 ## Contacto y discusión
 
 - Email: info@proportione.com
-- Discussions del repositorio público: https://github.com/Proportione/proportione-plugins/discussions
 - Proportione web: https://proportione.com
 - LinkedIn: https://linkedin.com/company/proportione

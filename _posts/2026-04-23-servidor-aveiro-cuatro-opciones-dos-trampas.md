@@ -88,8 +88,8 @@ Tres cosas nos llevamos para repetir en futuras decisiones de hardware:
 2. **Validar disponibilidad antes de cerrar la decisión**. La especificación ideal sin stock es un mock-up, no una decisión. Reservar siempre una alternativa con plan B documentado.
 3. **Server-grade donde el sobrecoste sea moderado**. ECC, IPMI, fuente Titanium y discos enterprise no son lujo: son tiempo que no gastarás depurando inestabilidades raras dentro de tres años.
 
-El servidor entra en servicio durante mayo. El siguiente post de esta serie contará el patrón "Capataz y Obrero" que monta encima — cómo Claude Code en el portátil delega tareas rutinarias a un modelo LLM local que vive en este hardware.
+El servidor entra en servicio durante mayo. Su primera carga real será un modelo LLM local que vive en este hardware y al que un agente de programación delega tareas rutinarias.
 
 ---
 
-*Si estás evaluando algo parecido y quieres contraste honesto sobre alguna decisión concreta, abre una [Discussion](https://github.com/Proportione/proportione-plugins/discussions) o escribe a [info@proportione.com](mailto:info@proportione.com).*
+*Si estás evaluando algo parecido y quieres contraste honesto sobre alguna decisión concreta, escribe a [info@proportione.com](mailto:info@proportione.com).*

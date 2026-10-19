@@ -80,4 +80,4 @@ Para cerrar el incidente hubo que desenchufar y reenchufar las seis Alexas (una 
 
 ---
 
-*Si ves algo que está mal o tienes un caso parecido, abre un [Issue](https://github.com/Proportione/proportione-plugins/issues) o comparte en [LinkedIn](https://www.linkedin.com/company/proportione).*
+*Si ves algo que está mal o tienes un caso parecido, escribe a [info@proportione.com](mailto:info@proportione.com) o comparte en [LinkedIn](https://www.linkedin.com/company/proportione).*
