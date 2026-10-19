@@ -92,4 +92,4 @@ El servidor entra en servicio durante mayo. Su primera carga real será un model
 
 ---
 
-*Si estás evaluando algo parecido y quieres contraste honesto sobre alguna decisión concreta, abre una [Discussion](https://github.com/Proportione/proportione-plugins/discussions) o escribe a [info@proportione.com](mailto:info@proportione.com).*
+*Si estás evaluando algo parecido y quieres contraste honesto sobre alguna decisión concreta, escribe a [info@proportione.com](mailto:info@proportione.com).*
